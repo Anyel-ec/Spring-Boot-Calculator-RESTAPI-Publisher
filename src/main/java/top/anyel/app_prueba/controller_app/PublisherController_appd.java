@@ -1,6 +1,5 @@
 package top.anyel.app_prueba.controller_app;
 
-
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +12,7 @@ import java.net.URI;
 @RestController
 @RequestMapping("/publisher/v1")
 public class PublisherController_appd {
+
     private final PublisherService_appd publisherServiceAppd;
 
     public PublisherController_appd(PublisherService_appd publisherServiceAppd) {
@@ -31,39 +31,36 @@ public class PublisherController_appd {
     @PostMapping("/save_appd")
     public ResponseEntity<?> save(@Valid @RequestBody Publisher_appd publisherAppd) {
         try {
-            return ResponseEntity.ok(publisherAppd);
+            Publisher_appd savedPublisher = publisherServiceAppd.save(publisherAppd);
+            return ResponseEntity.status(HttpStatus.CREATED).body(savedPublisher);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while saving the publisher.");
         }
-
-
     }
-    @PutMapping("/updatePublisherById/")
-    public ResponseEntity<?> updateById(@RequestParam int id,
-                                        @RequestBody Publisher_appd publisherAppd) {
+
+    @PutMapping("/updatePublisherById")
+    public ResponseEntity<?> updateById(@RequestParam int id, @RequestBody Publisher_appd publisherAppd) {
         try {
-            Publisher_appd updatedUser = publisherServiceAppd.updatePublisherById_appd(id, publisherAppd);
-            if (updatedUser == null) {
-                String mensaje = "No se encontraron datos para el ID proporcionado.";
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(mensaje);
+            Publisher_appd updatedPublisher = publisherServiceAppd.updatePublisherById_appd(id, publisherAppd);
+            if (updatedPublisher == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for the provided ID.");
             }
-            return ResponseEntity.ok(updatedUser);
+            return ResponseEntity.ok(updatedPublisher);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Ocurrió un error inesperado.");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
         }
     }
 
     @DeleteMapping("/deleteBookById/{id}")
     public ResponseEntity<?> deleteBookById(@PathVariable int id) {
         try {
-            String mensaje = publisherServiceAppd.deleteBookById_appd(id);
-            if (mensaje == null) {
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se encontraron datos para el ID proporcionado.");
+            String message = publisherServiceAppd.deleteBookById_appd(id);
+            if ("Book not found".equals(message)) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for the provided ID.");
             }
-            return ResponseEntity.ok(mensaje);
+            return ResponseEntity.ok(message);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Ocurrió un error inesperado.");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
         }
     }
-
 }

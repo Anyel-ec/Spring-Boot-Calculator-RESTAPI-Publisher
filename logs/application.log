@@ -2813,3 +2813,235 @@ Caused by: java.lang.ClassNotFoundException: top.anyel.app_prueba.repository_app
 2024-06-07 15:48:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-06-07 15:48:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-06-07 15:48:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-07 15:52:20 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-07 15:52:20 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:20 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:20 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 574 ms
+2024-06-07 15:52:21 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'publisherController_appd' defined in file [C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes\top\anyel\app_prueba\controller_app\PublisherController_appd.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'publisherService_appd' defined in file [C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes\top\anyel\app_prueba\service_app\PublisherService_appd.class]: Post-processing of merged bean definition failed
+2024-06-07 15:52:21 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 15:52:21 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 15:52:21 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'publisherController_appd' defined in file [C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes\top\anyel\app_prueba\controller_app\PublisherController_appd.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'publisherService_appd' defined in file [C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes\top\anyel\app_prueba\service_app\PublisherService_appd.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at top.anyel.app_prueba.AppPruebaApplication.main(AppPruebaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherService_appd' defined in file [C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes\top\anyel\app_prueba\service_app\PublisherService_appd.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [top.anyel.app_prueba.service_app.PublisherService_appd] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6b5bf4e5]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:431)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:412)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:312)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574)
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: top/anyel/app_prueba/repository_app/PublisherRepository_appd
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: top.anyel.app_prueba.repository_app.PublisherRepository_appd
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 44 common frames omitted
+2024-06-07 15:52:23 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:23 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:24 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:24 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 775 ms
+2024-06-07 15:52:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:52:24 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:52:24 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 1.143 seconds (process running for 587.61)
+2024-06-07 15:52:24 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-07 15:52:31 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-07 15:52:31 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:31 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:31 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:32 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 598 ms
+2024-06-07 15:52:32 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController_appd': Resolution of declared constructors on bean Class [top.anyel.app_prueba.controller_app.PublisherController_appd] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@feaebba] failed
+2024-06-07 15:52:32 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 15:52:32 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 15:52:32 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController_appd': Resolution of declared constructors on bean Class [top.anyel.app_prueba.controller_app.PublisherController_appd] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@feaebba] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:383)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at top.anyel.app_prueba.AppPruebaApplication.main(AppPruebaApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoClassDefFoundError: top/anyel/app_prueba/service_app/PublisherService_appd
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:378)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: top.anyel.app_prueba.service_app.PublisherService_appd
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 27 common frames omitted
+2024-06-07 15:52:33 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:33 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:34 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:34 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2024-06-07 15:52:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:52:34 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:52:34 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 0.776 seconds (process running for 597.266)
+2024-06-07 15:52:34 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-07 15:52:53 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-07 15:52:53 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:53 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:53 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:54 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 502 ms
+2024-06-07 15:52:54 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:52:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:52:54 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 0.775 seconds (process running for 617.11)
+2024-06-07 15:52:54 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-07 15:52:56 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-07 15:52:56 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:57 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:52:57 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:52:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:52:57 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:52:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:52:57 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:52:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+2024-06-07 15:52:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:52:57 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:52:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:52:57 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 0.702 seconds (process running for 620.368)
+2024-06-07 15:52:57 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-07 15:52:57 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07 15:52:57 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-07 15:52:57 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-07 15:54:05 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:07 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:09 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:13 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:14 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:15 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:54:30 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:55:59 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource publisher/v1/deleteBookById.]
+2024-06-07 15:59:12 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-07 15:59:12 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:13 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:59:13 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:59:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:59:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:59:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:59:13 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:59:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+2024-06-07 15:59:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:59:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:59:13 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 0.893 seconds (process running for 996.653)
+2024-06-07 15:59:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-07 15:59:16 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-07 15:59:16 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:16 INFO  t.a.app_prueba.AppPruebaApplication - Starting AppPruebaApplication using Java 17.0.8 with PID 22776 (C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba\target\classes started by anyel in C:\Users\anyel\OneDrive\Documentos\APPD\SpringBoot\app_prueba)
+2024-06-07 15:59:16 INFO  t.a.app_prueba.AppPruebaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-07 15:59:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-07 15:59:17 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 15:59:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 15:59:17 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 15:59:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 463 ms
+2024-06-07 15:59:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-07 15:59:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 15:59:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-07 15:59:17 INFO  t.a.app_prueba.AppPruebaApplication - Started AppPruebaApplication in 0.702 seconds (process running for 999.923)
+2024-06-07 15:59:17 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
