@@ -127,4 +127,4 @@ curl -X POST "http://localhost:8080/publisher/v1/save_appd" -H "Content-Type: ap
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at [your_email@domain.com](mailto:your_email@domain.com).
+If you have any questions or suggestions, feel free to contact me at [cyberdevmatrixl@gmail.com](mailto:cyberdevmatrixl@gmail.com).
