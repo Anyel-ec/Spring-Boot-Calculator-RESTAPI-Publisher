@@ -107,14 +107,14 @@ curl -X POST "http://localhost:8080/publisher/v1/save_appd" -H "Content-Type: ap
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/your_repository.git
-   cd your_repository
+   git clone https://github.com/Anyel-ec/Spring-Boot-Calculator-RESTAPI-Publisher
+   cd Spring-Boot-Calculator-RESTAPI-Publisher
    ```
 
 2. Navigate to the desired project directory (calculator or publisher manager):
 
    ```bash
-   cd calculator  # or publisher_manager
+   cd Spring-Boot-Calculator-RESTAPI-Publisher  # or publisher_manager
    ```
 
 3. Compile and run the project with Maven:
